@@ -1,0 +1,17 @@
+Package: IEDA
+Type: Package
+Title: Interactive Exploratory Data Analysis
+Version: 0.1.0
+Author: Sai Krupan Seela
+Maintainer: Sai Krupan Seela <sskrupan@gmail.com>
+Depends: R(>= 3.4.0)
+Imports: stringr, dplyr, shinycssloaders, evaluate, xlsx, xlsxjars, rJava, DT, plotly, shinydashboard, shinyjs, shiny
+Description: 
+        Exploratory Data Analysis is one of the key components of a data science project.
+        It is a crucial step to take before diving in to the machine learning or data modeling. 
+        EDA can sometimes be time consuming due to reasons like huge number of variables in the data set, writing code for each plot or group of plots. 
+        In order to eliminate these difficulties and reduce the time here is a simple tool which provides different interactive visualizations used in EDA just on click of a button.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
