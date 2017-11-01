@@ -104,7 +104,7 @@ options = list(lengthMenu = c(5, 30, 50), pageLength = 5, scrollX = TRUE, scroll
 
 fn_GetDataStructure = function(idata){
   dstr = data.frame(Variable = idata %>% colnames,
-                    Class = idata %>% sapply(typeof), stringsAsFactors = FALSE)
+                    Class = idata %>% sapply(class), stringsAsFactors = FALSE)
   dstr = dstr %>% mutate(DMClass = if_else(Class %in% c("double","integer","numeric"), "Measure","Dimension"))
   row.names(dstr) = NULL
   return(dstr)
