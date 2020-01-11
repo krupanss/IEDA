@@ -12,19 +12,19 @@ rm(list = ls())
 shinyServer(function(input, output, session) {
   options(warn =-1)
 
-  source("./server_1DataSource.R",local=T)
+  source("./server_1VeriKaynak.R",local=T)
 
-  source("./server_2Univariate.R",local=T)
+  source("./server_2TekDegisken.R",local=T)
 
-  source("./server_3BiVariateScatter.R",local=T)
+  source("./server_3IkiDegiskenSacinim.R",local=T)
 
-  source("./server_4BiVariateBox.R",local=T)
+  source("./server_4IkiDegiskenKutu.R",local=T)
 
-  source("./server_5BiVariateBar.R",local=T)
+  source("./server_5IkiDegiskenSutun.R",local=T)
 
-  source("./server_6BiVariateHistogram.R", local = T)
+  source("./server_6IkiDegiskenHistogram.R", local = T)
 
-  source("./server_7MultiScatter.R", local = T)
+  source("./server_7CokDegiskenSacinim.R", local = T)
 
-  source("./server_8MultiBox.R", local = T)
+  source("./server_8CokDegiskenKutu.R", local = T)
 })
